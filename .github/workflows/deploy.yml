@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code!
+        uses: actions/checkout@v2
+
+      - name: Deploy!
+        uses: migueldamota/deployer@0.4.3
+        with:
+          private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          dir: '/var/www/innovation-in-niedersachsen.de'
+          host: ${{ secrets.SSH_HOST }}
+          user: root
+          port: 23521
+          password: ${{ secrets.SSH_PASSWORD }}
+          token: ${{ github.token }}

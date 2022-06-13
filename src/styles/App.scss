@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+:root {
+    --background: #fff;
+    --color: #000;
+    --color-2: #7a7a7a;
+
+    --border-color: #eee;
+
+    --accent-yellow: #ffc300;
+    --accent-orange: #ff7600;
+    --accent-red: #ff000b;
+    --accent-pink: #f700fb;
+
+    --gap: 24px;
+    --gap-double: calc(var(--gap) * 2);
+    --gap-half: calc(var(--gap) / 2);
+    --gap-quarter: calc(var(--gap) / 4);
+}
+
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body, div, header, footer, section, article, form, input, select, ul, li, ol, button, textarea,
+a, p, h1, h2, h2, h3, h4, h5, h6, u, i, b, span, strong {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+a, button {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+
+    background: var(--background);
+    color: var(--color);
+}
+
+
+h1 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+
+.home {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    color: #fff;
+    overflow: hidden;
+    color: #000;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    text-align: center;
+
+    .image {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://duitslandinstituut.nl/assets/upload/Onderwijs/Fr%C3%BChst%C3%BCcksei%202020/Digitalisierung_Schule_skynesher--1078x516.jpg");
+        background-size: cover;
+        filter: brightness(50%);
+    }
+}
+
+section {
+    padding: var(--gap-double) 0;
+}
+
+.sectionHeader {
+    text-align: center;
+
+    h1 {
+        font-size: 32px;
+    }
+}

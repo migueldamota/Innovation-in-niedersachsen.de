@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: 1240px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--gap);
+    padding-left: var(--gap);
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        padding-right: var(--gap-half);
+        padding-left: var(--gap-half);
+    }
+}
