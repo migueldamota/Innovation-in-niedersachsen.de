@@ -61,13 +61,6 @@
 }
 
 
-@media (min-width: 992px) {
-    .mobileTrigger {
-        display: none;
-    }
-}
-
-
 .mobileNav {
     position: absolute;
     top: 0;
@@ -76,4 +69,11 @@
     height: 100vh;
     background-color: #fff;
     box-shadow: 0 2px 150px 150px rgba(0, 0, 0, .5);
+}
+
+
+@media (min-width: 992px) {
+    .mobileTrigger, .mobileNav {
+        display: none;
+    }
 }
