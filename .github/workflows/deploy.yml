@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy!
-        uses: migueldamota/deployer@0.4.4-pre-7
+        uses: migueldamota/deployer@0.4.4-pre-8
         with:
           private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           dir: '/var/www/innovation-in-niedersachsen.de'
