@@ -57,6 +57,12 @@ body {
     color: var(--color);
 }
 
+#app {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 h1 {
     font-size: 38px;
@@ -75,7 +81,6 @@ h3 {
     height: 80vh;
     color: #fff;
     overflow: hidden;
-    color: #000;
 
     > div {
         display: flex;
@@ -95,6 +100,7 @@ h3 {
         bottom: 0;
         background-image: url("https://duitslandinstituut.nl/assets/upload/Onderwijs/Fr%C3%BChst%C3%BCcksei%202020/Digitalisierung_Schule_skynesher--1078x516.jpg");
         background-size: cover;
+        background-position: center center;
         filter: brightness(50%);
     }
 }
@@ -109,4 +115,30 @@ section {
     h1 {
         font-size: 32px;
     }
+}
+
+
+
+
+.alertWrapper {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    backdrop-filter: blur(10px);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.alert {
+    max-width: 372px;
+    padding: var(--gap);
+    font-size: 18px;
 }

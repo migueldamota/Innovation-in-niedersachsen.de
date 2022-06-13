@@ -21,6 +21,8 @@ export default function Home () {
 						<h1>Wer wir sind</h1>
 					</header>
 
+					<p>Wir sind die <b>Innovation in Niedersachsen</b>! Wir stehen für Innovation - die wir in die Welt bringen wollen.</p>
+
 				</div>
 			</section>
         </>
@@ -28,4 +30,4 @@ export default function Home () {
 }
 
 
-// https://www.tagesspiegel.de/images/tablet-computer-in-der-grundschule/21168960/2-format43.jpg 
+// https://www.tagesspiegel.de/images/tablet-computer-in-der-grundschule/21168960/2-format43.jpg

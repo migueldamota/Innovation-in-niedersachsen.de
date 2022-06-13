@@ -2,7 +2,7 @@ import styles from "./styles/Header.module.scss";
 
 import Logo from "../assets/Logo.png";
 import { Link, useLocation } from "react-router-dom";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 interface NavLink {
     name: string
@@ -19,6 +19,8 @@ const links: NavLink[] = [
 
 export default function Header () {
     const location = useLocation();
+
+    const [openMenu, setOpenMenu] = useState(false);
 
     const navLinks = useMemo(() => {
         return links.map((link) => {
@@ -45,11 +47,19 @@ export default function Header () {
                     }) }
                 </ul>
 
-                <div className="mobileHeader">
-                    <button className={styles.mobileTrigger}>Menü</button>
+                <div className={styles.mobileHeader}>
+                    <button className={styles.mobileTrigger}
+                        onClick={() => setOpenMenu(!openMenu)}>Menü</button>
 
-                    <ul className={styles.mobileNav}>
-
+                    <ul className={`${styles.mobileNav} ${openMenu ? styles.mobileNavOpen : ""}`}>
+                        { navLinks.map((item) => {
+                            return (
+                                <li key={item.name} className={item.active ? styles.active : ""}
+                                    onClick={() => setOpenMenu(false)}>
+                                    <Link to={item.link}>{item.name}</Link>
+                                </li>
+                            )
+                        }) }
                     </ul>
                 </div>
 
