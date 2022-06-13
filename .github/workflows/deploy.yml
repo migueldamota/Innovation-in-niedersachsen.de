@@ -21,4 +21,4 @@ jobs:
           port: 23521
           password: ${{ secrets.SSH_PASSWORD }}
           token: ${{ github.token }}
-          after_deploy: npm install && npm run build
+          after_deploy: npm install --silent && npm run build
