@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy!
-        uses: migueldamota/deployer@0.4.3
+        uses: migueldamota/deployer@0.4.4-pre-3
         with:
           private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           dir: '/var/www/innovation-in-niedersachsen.de'
@@ -21,3 +21,6 @@ jobs:
           port: 23521
           password: ${{ secrets.SSH_PASSWORD }}
           token: ${{ github.token }}
+          after_deploy: 
+            - npm install
+            - npm run build
