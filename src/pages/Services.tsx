@@ -4,11 +4,10 @@ export default function Services () {
 
     return (
         <>
-            <section className="home">
+            <section className="home services">
 				<div className={utilsStyles.wrapper}>
 
-					<h3>Leistung</h3>
-					<h1>von Innovation in Niedersachsen</h1>
+					<h1>Leistung</h1>
 
 				</div>
 				<div className="image"></div>
