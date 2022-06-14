@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import { useState } from "react";
 import Alert from "./components/Alert";
+import Services from "./pages/Services";
 
 export default function App () {
 	const [modalOpen, setModalOpen] = useState(true);
@@ -19,6 +20,7 @@ export default function App () {
 			<Routes>
 
 				<Route path="/" element={<Home />} />
+				<Route path="/services" element={<Services />} />
 
 			</Routes>
 
