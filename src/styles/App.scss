@@ -214,7 +214,7 @@ section {
         width: 100%;
         padding: var(--gap-half);
         margin-bottom: var(--gap-double);
-        
+
         &.flip {
             grid-template-columns: 1fr .75fr;
         }
@@ -223,6 +223,7 @@ section {
             border-radius: 8px;
             overflow: hidden;
             width: 100%;
+            aspect-ratio: 5 / 3;
         }
 
         div {
