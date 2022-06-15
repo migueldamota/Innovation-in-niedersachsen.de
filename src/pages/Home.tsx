@@ -1,5 +1,7 @@
 import utilsStyles from "../styles/Utils.module.scss";
 
+import HomeBackground from "../assets/home-background.png";
+
 export default function Home () {
 
     return (
@@ -11,17 +13,19 @@ export default function Home () {
 					<h1>Innovation in Niedersachsen</h1>
 
 				</div>
-				<div className="image"></div>
+				<div className="image" style={{ backgroundImage: `url(${HomeBackground})` }}></div>
 			</section>
 
 			<section>
 				<div className={utilsStyles.wrapper}>
 
-					<header className="sectionHeader">
-						<h1>Wer wir sind</h1>
-					</header>
+					<div className="frame">
+						<header className="sectionHeader">
+							<h1>Wer wir sind</h1>
+						</header>
 
-					<p>Wir sind die <b>Innovation in Niedersachsen</b>! Wir stehen für Innovation - die wir in die Welt bringen wollen.</p>
+						<p>Wir sind die <b>Innovation in Niedersachsen</b>! Wir stehen für Innovation - die wir in die Welt bringen wollen.</p>
+					</div>
 
 				</div>
 			</section>
