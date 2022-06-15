@@ -3,6 +3,13 @@ import utilsStyles from "../styles/Utils.module.scss";
 import HomeBackground from "../assets/home-background.png";
 import InfrastructureImage from "../assets/infrastruktur-image.png";
 import YoungTeamImage from "../assets/youngteam-image.png";
+import DigitalizationImage from "../assets/digitalisierung-image.png";
+
+const ideas = [
+	{ title: "Digitalisierung", text: "...", image: DigitalizationImage },
+	{ title: "Infrastruktur", text: "...", image: InfrastructureImage },
+	{ title: "Junges Team", text: "...", image: YoungTeamImage },
+]
 
 export default function Home () {
 
@@ -41,32 +48,20 @@ export default function Home () {
 
 					<div className="grid">
 
-						<div className="gridItem">
-							<img src={InfrastructureImage} alt="Infrastruktur Bild" />
+						{
+							ideas.map((idea, i) => {
+								return (
+									<div className={`gridItem ${i%2 === 1 ? "flip" : ""}`.trim()} key={idea.title}>
+										<img src={idea.image} alt={`${idea.title} Bild`} />
 
-							<div>
-								<h3>Infrastruktur</h3>
-								<p>Wir bauen eine gute Infrastruktur für Ihr Unternehmen/Ihre Schule. Gute PCs und gutes Internet sind ein Muss für Sie sheesh...</p>
-							</div>
-						</div>
-
-						<div className="gridItem flip">
-							<div>
-								<h3>Junges Team</h3>
-								<p>Wir sind ein junges Team lol</p>
-							</div>
-
-							<img src={YoungTeamImage} alt="Junges Team Bild" />
-						</div>
-
-						<div className="gridItem">
-							<img src="https://via.placeholder.com/1280x640" alt="" />
-
-							<div>
-								<h3>Infrastruktur</h3>
-
-							</div>
-						</div>
+										<div>
+											<h3>{ idea.title }</h3>
+											<p>{ idea.text }</p>
+										</div>
+									</div>
+								)
+							})
+						}
 
 					</div>
 

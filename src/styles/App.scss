@@ -217,6 +217,18 @@ section {
 
         &.flip {
             grid-template-columns: 1fr .75fr;
+            
+            > img {
+                grid-row: 1 / 2;
+                grid-column: 2 / 3;
+            }
+
+            > div {
+                padding-left: var(--gap-half);
+                padding-right: var(--gap);
+                grid-row: 1 / 2;
+                grid-column: 1 /2;
+            }
         }
 
         img {
