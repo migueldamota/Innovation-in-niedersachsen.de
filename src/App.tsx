@@ -8,7 +8,7 @@ import Alert from "./components/Alert";
 import Services from "./pages/Services";
 
 export default function App () {
-	const [modalOpen, setModalOpen] = useState(true);
+	const [modalOpen, setModalOpen] = useState(false);
 
 	return (
 		<>

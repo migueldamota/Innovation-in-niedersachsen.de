@@ -29,6 +29,47 @@ export default function Home () {
 
 				</div>
 			</section>
+
+			<section>
+				<div className="gridWrapper">
+
+					<header className="sectionHeader">
+						<h1>Unsere Ideen</h1>
+					</header>
+
+					<div className="grid">
+
+						<div className="gridItem">
+							<img src="https://via.placeholder.com/1280x640" alt="" />
+
+							<div>
+								<h3>Infrastruktur</h3>
+								<p>Wir bauen eine gute Infrastruktur für Ihr Unternehmen/Ihre Schule. Gute PCs und gutes Internet sind ein Muss für Sie sheesh...</p>
+							</div>
+						</div>
+
+						<div className="gridItem flip">
+							<div>
+								<h3>Junges Team</h3>
+								<p>Wir sind ein junges Team lol</p>
+							</div>
+
+							<img src="https://via.placeholder.com/1280x640" alt="" />
+						</div>
+
+						<div className="gridItem">
+							<img src="https://via.placeholder.com/1280x640" alt="" />
+
+							<div>
+								<h3>Infrastruktur</h3>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
         </>
     )
 }

@@ -2,6 +2,7 @@
 
 :root {
     --background: #fff;
+    --background-2: #f3f3f7;
     --color: #000;
     --color-2: #7a7a7a;
 
@@ -114,6 +115,10 @@ section {
 
 .sectionHeader {
     text-align: center;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap-double);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--gap-half);
 
     h1 {
         font-size: 32px;
@@ -186,11 +191,63 @@ section {
     max-width: 768px;
     margin-right: auto;
     margin-left: auto;
-    padding: var(--gap) var(--gap-double);
-    background-color: var(--border-color);
+    padding: var(--gap-double);
+    background-color: var(--background-2);
     border-radius: 8px;
 
     .sectionHeader {
+        margin-top: 0;
         margin-bottom: var(--gap);
     }
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+    .gridItem {
+        display: grid;
+        grid-template-columns: .75fr 1fr;
+        width: 100%;
+        padding: var(--gap-half);
+        margin-bottom: var(--gap-double);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+
+        &.flip {
+            grid-template-columns: 1fr .75fr;
+        }
+
+        img {
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        div {
+            padding: var(--gap-half);
+            padding-left: var(--gap);
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-bottom: var(--gap-half);
+        }
+
+        p {
+            color: var(--color-2);
+        }
+    }
+}
+
+.gridWrapper {
+    max-width: 992px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--gap);
+    padding-left: var(--gap);
 }
