@@ -4,26 +4,7 @@ export default function Services () {
 
     return (
         <>
-            <section className="home services">
-				<div className={utilsStyles.wrapper}>
-
-					<h1>Leistung</h1>
-
-				</div>
-				<div className="image"></div>
-			</section>
-
-			<section>
-				<div className={utilsStyles.wrapper}>
-
-					<header className="sectionHeader">
-						<h1>Wer wir sind</h1>
-					</header>
-
-					<p>Wir sind die <b>Innovation in Niedersachsen</b>! Wir stehen für Innovation - die wir in die Welt bringen wollen.</p>
-
-				</div>
-			</section>
+		
         </>
     )
 }

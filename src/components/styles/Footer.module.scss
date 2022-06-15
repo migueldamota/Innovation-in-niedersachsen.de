@@ -1,0 +1,32 @@
+.footer {
+    display: block;
+    margin-top: auto;
+
+    background-color: #000;
+    color: #fff;
+    padding: var(--gap);
+
+
+    li {
+        display: inline-block;
+        margin-left: var(--gap);
+
+        a {
+            opacity: .75;
+            transition: opacity .15s;
+            font-size: 14px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.footerWrapper {
+    composes: wrapper from "../../styles/Utils.module.scss";
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -60,8 +60,11 @@ body {
 
 #app {
     position: relative;
-    overflow-x: hidden;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -261,4 +264,9 @@ section {
     margin-left: auto;
     padding-right: var(--gap);
     padding-left: var(--gap);
+}
+
+
+.imprint {
+    font-size: 18px;
 }
