@@ -1,6 +1,8 @@
 import utilsStyles from "../styles/Utils.module.scss";
 
 import HomeBackground from "../assets/home-background.png";
+import InfrastructureImage from "../assets/infrastruktur-image.png";
+import YoungTeamImage from "../assets/youngteam-image.png";
 
 export default function Home () {
 
@@ -40,7 +42,7 @@ export default function Home () {
 					<div className="grid">
 
 						<div className="gridItem">
-							<img src="https://via.placeholder.com/1280x640" alt="" />
+							<img src={InfrastructureImage} alt="Infrastruktur Bild" />
 
 							<div>
 								<h3>Infrastruktur</h3>
@@ -54,7 +56,7 @@ export default function Home () {
 								<p>Wir sind ein junges Team lol</p>
 							</div>
 
-							<img src="https://via.placeholder.com/1280x640" alt="" />
+							<img src={YoungTeamImage} alt="Junges Team Bild" />
 						</div>
 
 						<div className="gridItem">

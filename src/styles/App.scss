@@ -214,9 +214,7 @@ section {
         width: 100%;
         padding: var(--gap-half);
         margin-bottom: var(--gap-double);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-
+        
         &.flip {
             grid-template-columns: 1fr .75fr;
         }
