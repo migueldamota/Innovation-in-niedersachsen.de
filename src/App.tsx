@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Alert from "./components/Alert";
-import Services from "./pages/Services";
+import Services from "./pages/Leistungen";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
 
