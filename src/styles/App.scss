@@ -288,6 +288,16 @@ section {
     }
 }
 
+@media (max-width: 992px) {
+    .gridItem {
+        display: block !important;
+
+        > div {
+            padding: var(--gap-half) 0 0 !important;
+        }
+    }
+}
+
 .gridWrapper {
     max-width: 992px;
     height: 100%;
