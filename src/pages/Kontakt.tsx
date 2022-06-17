@@ -1,6 +1,6 @@
 import { createRef, FormEvent, useEffect, useState } from "react";
 import Section, { SectionHeader } from "../components/Section";
-import { setTitle } from "../modules-page";
+import { setTitle } from "../modules/page";
 
 export default function Kontakt () {
     const [name, setName] = useState("");
