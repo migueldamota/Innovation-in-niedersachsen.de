@@ -12,9 +12,9 @@ interface NavLink {
 
 const links: NavLink[] = [
     { name: "Home", link: "/" },
-    { name: "Leistungen", link: "/services" },
-    { name: "Standorte", link: "/locations" },
-    { name: "Kontakt", link: "/contact" },
+    { name: "Leistungen", link: "/leistungen" },
+    { name: "Standorte", link: "/standorte" },
+    { name: "Kontakt", link: "/kontakt" },
 ];
 
 export default function Header () {
@@ -33,7 +33,7 @@ export default function Header () {
         <header className={styles.header}>
             <div className={styles.headerWrapper}>
 
-                <Link to="/">
+                <Link to="/" className={styles.headerLogo}>
                     <img src={Logo} alt="" />
                 </Link>
 

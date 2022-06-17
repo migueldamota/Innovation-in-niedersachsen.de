@@ -8,15 +8,16 @@
 
     --border-color: #eee;
 
-    --accent-yellow: #ffc300;
-    --accent-orange: #ff7600;
-    --accent-red: #ff000b;
-    --accent-pink: #f700fb;
+    --accent-color: #DC0000;
 
     --gap: 24px;
     --gap-double: calc(var(--gap) * 2);
     --gap-half: calc(var(--gap) / 2);
     --gap-quarter: calc(var(--gap) / 4);
+}
+
+:focus {
+    outline: none;
 }
 
 
@@ -299,4 +300,50 @@ section {
 
 .imprint {
     font-size: 18px;
+}
+
+
+
+form {
+    display: block;
+    padding: var(--gap);
+    margin: var(--gap-double) auto 0;
+    max-width: 496px;
+
+    input {
+        height: 38px;
+    }
+
+    input, textarea {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid var(--border-color);
+        font-size: 16px;
+        margin-bottom: var(--gap);
+        padding: var(--gap-half);
+
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+
+    textarea {
+        min-height: 100px;
+        height: 100%;
+        max-height: 250px;
+        resize: vertical;
+    }
+
+    button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: var(--accent-color);
+        color: #fff;
+        font-weight: bold;
+        padding: var(--gap-quarter) var(--gap);
+        border-radius: 4px;
+        font-size: 16px;
+    }
 }

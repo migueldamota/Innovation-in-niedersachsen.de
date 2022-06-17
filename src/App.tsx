@@ -1,20 +1,23 @@
 import "./styles/App.scss";
 
-import { useState } from "react";
-import { Route, Routes } from "react-router";
+import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router";
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Alert from "./components/Alert";
-import Services from "./pages/Leistungen";
+import Leistungen from "./pages/Leistungen";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
+import Kontakt from "./pages/Kontakt";
 
 export default function App () {
 	const [modalOpen, setModalOpen] = useState(true);
 
 	return (
 		<>
+
+			<ScrollToTop />
 
 			{ modalOpen && <Alert closeModal={() => setModalOpen(false)} /> }
 
@@ -23,8 +26,9 @@ export default function App () {
 			<Routes>
 
 				<Route path="/" element={<Home />} />
-				<Route path="/services" element={<Services />} />
+				<Route path="/leistungen" element={<Leistungen />} />
 				<Route path="/impressum" element={<Impressum />} />
+				<Route path="/kontakt" element={<Kontakt />} />
 
 				<Route path="*" element={<p>Seite nicht gefunden</p>} />
 
@@ -34,4 +38,14 @@ export default function App () {
 
 		</>
 	)
+}
+
+function ScrollToTop () {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location.pathname]);
+
+	return null;
 }

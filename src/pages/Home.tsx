@@ -6,16 +6,28 @@ import YoungTeamImage from "../assets/youngteam-image.png";
 import DigitalizationImage from "../assets/digitalisierung-image.png";
 
 const ideas = [
-	{ title: "Digitalisierung", text: "...", image: DigitalizationImage },
-	{ title: "Infrastruktur", text: "...", image: InfrastructureImage },
-	{ title: "Junges Team", text: "...", image: YoungTeamImage },
+	{
+		title: "Digitalisierung",
+		text: "Die Digitalisierung ist schon ein großes Thema, vor allem für Schulen. Wir bauen ein gutes Netz mit einer guten Infrastruktur für Ihr Unternehmen oder einer Schule.",
+		image: DigitalizationImage,
+	},
+	{
+		title: "Infrastruktur", 
+		text: "Mit dem Bau einer guten Infrastruktur, steht dem Ausbau nichts mehr im Weg!",
+		image: InfrastructureImage,
+	},
+	{
+		title: "Junges Team", 
+		text: "Wir sind ein junges Team, welches sich Tag täglich mit digitalen Medien auseinandersetzt.",
+		image: YoungTeamImage,
+	},
 ]
 
 export default function Home () {
 
-    return (
-        <>
-            <section className="home">
+	return (
+		<>
+			<section className="home">
 				<div className={utilsStyles.wrapper}>
 
 					<h3>Wir sind die</h3>
@@ -51,12 +63,12 @@ export default function Home () {
 						{
 							ideas.map((idea, i) => {
 								return (
-									<div className={`gridItem ${i%2 === 1 ? "flip" : ""}`.trim()} key={idea.title}>
+									<div className={`gridItem ${i % 2 === 1 ? "flip" : ""}`.trim()} key={idea.title}>
 										<img src={idea.image} alt={`${idea.title} Bild`} />
 
 										<div>
-											<h3>{ idea.title }</h3>
-											<p>{ idea.text }</p>
+											<h3>{idea.title}</h3>
+											<p>{idea.text}</p>
 										</div>
 									</div>
 								)
@@ -67,8 +79,8 @@ export default function Home () {
 
 				</div>
 			</section>
-        </>
-    )
+		</>
+	)
 }
 
 
