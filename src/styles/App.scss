@@ -357,3 +357,23 @@ form {
         font-size: 16px;
     }
 }
+
+
+.error-success {
+    color: #1dd1a1;
+    border: 1px solid #1dd1a1;
+}
+
+.error-error {
+    color: #ff4757;
+    border: 1px solid #ff4757;
+}
+
+.error-success, .error-error {
+    display: block;
+    margin-bottom: var(--gap);
+    padding: var(--gap-quarter) var(--gap-half);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
