@@ -1,5 +1,6 @@
-import { createRef, FormEvent, useState } from "react";
+import { createRef, FormEvent, useEffect, useState } from "react";
 import Section, { SectionHeader } from "../components/Section";
+import { setTitle } from "../modules-page";
 
 export default function Kontakt () {
     const [name, setName] = useState("");
@@ -25,6 +26,10 @@ export default function Kontakt () {
 
         setError({ type: "success", message: "Ihre Nachricht wurde versendet" });
     }
+
+    useEffect(() => {
+        setTitle("Kontakt");
+    }, []);
 
     return (
         <>

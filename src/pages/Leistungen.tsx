@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import { setTitle } from "../modules-page";
 import utilsStyles from "../styles/Utils.module.scss";
 
-export default function Services () {
+export default function Leistungen () {
+
+    useEffect(() => {
+        setTitle("Impressum");
+    }, []);
 
     return (
         <>

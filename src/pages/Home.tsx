@@ -4,6 +4,8 @@ import HomeBackground from "../assets/home-background.png";
 import InfrastructureImage from "../assets/infrastruktur-image.png";
 import YoungTeamImage from "../assets/youngteam-image.png";
 import DigitalizationImage from "../assets/digitalisierung-image.png";
+import { useEffect } from "react";
+import { setTitle } from "../modules-page";
 
 const ideas = [
 	{
@@ -24,6 +26,10 @@ const ideas = [
 ]
 
 export default function Home () {
+
+    useEffect(() => {
+        setTitle("Home");
+    }, []);
 
 	return (
 		<>
