@@ -40,7 +40,7 @@ export default function Home () {
 					<h1>Innovation in Niedersachsen</h1>
 
 				</div>
-				<div className="image" style={{ backgroundImage: `url(${HomeBackground})` }}></div>
+				<div className="sectionImage" style={{ backgroundImage: `url(${HomeBackground})` }}></div>
 			</section>
 
 			<section>
