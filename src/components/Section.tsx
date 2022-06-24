@@ -1,9 +1,9 @@
 import utilsStyles from "../styles/Utils.module.scss";
 
-export default function Section ({ small, children }: { small?: boolean, children: any }) {
+export default function Section ({ className, small, children }: { className?: string, small?: boolean, children: any }) {
 
     return (
-        <section>
+        <section className={className}>
             <div className={small ? utilsStyles.wrapperSmall : utilsStyles.wrapper}>
 
                 { children }

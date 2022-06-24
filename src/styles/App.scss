@@ -100,17 +100,19 @@ h3 {
 
     text-align: center;
 
-    .image {
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: cover;
-        background-position: center center;
-        filter: brightness(50%);
-    }
+    
+}
+
+.sectionImage {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(50%);
 }
 
 .sectionHero {
@@ -377,4 +379,44 @@ form {
     border-radius: 4px;
     text-align: center;
     font-weight: 500;
+}
+
+
+.button {
+    display: inline-block;
+    padding: var(--gap-quarter) var(--gap-half);
+    background-color: #DC0000;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: var(--gap);
+    transition: background-color .15s;
+
+    &:hover {
+        background-color: #c10707;
+    }
+}
+
+
+.tabs {
+    .tabItem {
+        display: block;
+        margin-bottom: var(--gap-double);
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: var(--gap);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        text-align: left;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: var(--gap-half);
+        }
+        p {
+            color: var(--color-2);
+        }
+    }
+    text-align: center;
 }
