@@ -1,5 +1,5 @@
 import Map from "../components/Map";
-import Section from "../components/Section";
+import Section, { SectionHeader } from "../components/Section";
 
 export default function Standorte () {
 
@@ -15,6 +15,8 @@ export default function Standorte () {
             </Section>
 
             <Section>
+                <SectionHeader title="Hier können Sie uns finden" />
+
                 <Map />
             </Section>
 
