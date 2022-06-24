@@ -10,6 +10,7 @@ import Leistungen from "./pages/Leistungen";
 import Footer from "./components/Footer";
 import Impressum from "./pages/Impressum";
 import Kontakt from "./pages/Kontakt";
+import Standorte from "./pages/Standorte";
 
 export default function App () {
 	const [modalOpen, setModalOpen] = useState(true);
@@ -27,6 +28,7 @@ export default function App () {
 
 				<Route path="/" element={<Home />} />
 				<Route path="/leistungen" element={<Leistungen />} />
+				<Route path="/standorte" element={<Standorte />} />
 				<Route path="/impressum" element={<Impressum />} />
 				<Route path="/kontakt" element={<Kontakt />} />
 
