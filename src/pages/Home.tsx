@@ -14,13 +14,13 @@ const ideas = [
 		image: DigitalizationImage,
 	},
 	{
-		title: "Infrastruktur", 
-		text: "Mit dem Bau einer guten Infrastruktur, steht dem Ausbau nichts mehr im Weg!",
+		title: "Infrastruktur",
+		text: "Mit dem Bau einer guten Infrastruktur, steht dem Ausbau nichts mehr im Weg! Mit einem guten Ausbau des Internets hat jeder im Gebäude Zugang zum Internet und eine schnelle Verbindung, so dass wenig bis keine Unterbrechungen auftreten.",
 		image: InfrastructureImage,
 	},
 	{
-		title: "Junges Team", 
-		text: "Wir sind ein junges Team, welches sich Tag täglich mit digitalen Medien auseinandersetzt.",
+		title: "Junges Team",
+		text: "Wir sind ein junges Team, welches sich Tag täglich mit digitalen Medien auseinandersetzt. Daher sind wir immer auf dem neusten Stand der Technik, um Ihnen den besten Support bieten zu können.",
 		image: YoungTeamImage,
 	},
 ]
